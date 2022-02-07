@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seikkailupeli</title>
+    <style>
+        body {
+          height: 100vh;
+          display: flex;
+          background-color: grey;
+          justify-content: center;
+          align-items: center;
+          
+        }
+    
+        .container {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+              rgba(0, 0, 0, 0.4)), url(images/background.jpg);
+          background-size: cover;
+          width: 500px;
+          height: 510px;
+          display: block;
+          align-items: center;
+          float: center;
+          margin-right: 15%;
+        }
+    
+        .container-inner {
+          width: 302px;
+          margin: 0 auto;
+          text-align: center;
+        }
+    
+        p {
+          color: #fff;
+        }
+    
+        img {
+          margin: 40px auto;
+          display: block;
+          width: 300px;
+          height: 267px;
+          border: 1px solid black;
+        }
+    
+        .bold {
+          font-weight: bold;
+        }
+        .box{
+          box-sizing: border-box;
+          float:left;
+          width: 15%;
+          
+        }
+        .box h1{
+          font-family:fantasy;
+          animation: color-change 13s infinite;
+          
+          
+        }
+        @keyframes color-change {
+        0%{color:rgba(0,255,0,0.8);}
+        25%{color:rgba(0,0,255,0.8);}
+        50%{color:rgba(255, 0, 0, 0.8);}
+        75%{color:rgba(255,255,0,0.8);}
+        90%{color:rgba(255,0,255,0.8);}
+        100%{color:rgba(0,255,0,0.8);}
+        0%{transform: rotate(0deg);}
+        50%{transform: rotateY(180deg);}
+        75%{transform: rotatex(180deg);}
+        }
+
+      
+      </style>
+    
+</head>
+
+<body>
+  <div class="box">
+    <h1>Seikkailupeli</h1>
+    <p><strong>Käytössäsi olevat toiminnot:</strong><br><em>
+    - pohjoinen, itä, etelä, länsi<br>
+    - poimi, käytä, pudota <strong>esine</strong><br>
+    - kirjoita haluamasi toiminto <br>ja paina enteriä
+    </em>
+    </p>
+    <p><strong>Tehtävät:</strong><br><em></em>
+      - Kerää rohkeutta tappamalla<br> kaikki mahdolliset örkit<br><br>
+      - Kun sinulla on tarpeeksi rohkeutta, <br>voit jatkaa mökin luota etelään.<br><br>
+      - Keksi keino miten pääset<br> portin läpi itään.
+    </p>
+  </div>
+    <div class="container">
+      
+        <div class="container-inner">
+            <img src="" alt="" id="kuva">
+            <input id="input" type="text" placeholder="Mitä haluat tehdä">
+            <button>Vastaa</button>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="js/scriptSeik.js"></script>
+</body>
+
+</html>
+

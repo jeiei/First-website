@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Pong</title>
+    <link rel="stylesheet" href="css/stylesPong.css">
+    <style>
+        .spoiler{
+            color:black;
+            background-color: black;
+        }
+        .spoiler:hover{
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" height="480" width="420"></canvas>
+    <div>
+        <input type="radio" id="cpu" name="valinta">
+        <label for="scales">Play against the computer</label>
+    </div>
+    <div>
+        <input type="radio" id="twp" name="valinta">
+        <label for="scales">Two player game</label>
+    </div> 
+    <div><h3>Pong-peli</h3>
+    <p>Pelaa joko tietokonetta tai kaveria vastaan. <br>
+    Pelaaja joka saa ensimmäisenä 5 pistettä voittaa pelin.<br>
+    Peli vaikeutuu pikku hiljaa. Pallon vauhti kasvaa joka kerta kun pallo osuu johonkin. <br>
+    Sillä pelaajalla kenen maaliin pallo menee, lyhenee maila kymmenellä piksellillä. <br>
+    Jotta kilpailu ja nöyryyttämiseltä pelastuminen olisi vielä mahdollista, <br>kasvaa mailan vauhti mailan lyhentyessä.<br>
+    
+    <span class="spoiler">5 pistettä jottei peli kestäisi ikuisuutta</span>
+    </p>
+    <h3>Käytettävät näppäimet</h3>
+    <p>Ekan pelaajan näppäiminä toimii nuolinäppäimet.<br> Oikealla ja vasemmalla nuolella liikutetaan mailaa<br>
+    Ylänuolesta saa pelin pauselle ja alanuoli toimii restart nappina.<br>
+    Tokan pelaajan näppäiminä toimii <strong>A</strong> ja <strong>D</strong> näppäimet.<br>
+    Ja sama englanniks.
+
+
+    </p>
+    </div>
+    
+    <script src="js/scriptPong.js"></script>
+</body>
+</html>

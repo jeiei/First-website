@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/hmm1.png">
+    <title>Portfoliosivu</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded" id="navbar">
+        <!-- <a class="navbar-brand" href="#">Portfolio</a> -->
+        <a class="navbar-brand" href="index.html"><img src="images/hmm1.png" width="50" height="50" alt="">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="works.html">Some interesting works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            </div>
+          
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class= "shadow p-3 mb-5 bg-white rounded" id="mainWrap">
+            <div id="mainContent">
+                <h1 class="bd-title"> Portfoliosivu </h1>
+                <p id="etuteksti">
+                Tässä erittäin simppelisti bootsträppiä käyttäen toteutettu sivu joka on mielestäni jopa siisti.<br>
+                Entä sinusta? Kirjoita mielipiteesi alas.
+                </p>
+                <form id="mielipide">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="textArea" rows="5" name="mpide" placeholder="Mielipiteesi tähän..."></textarea><br>
+                    <button type="submit" onclick="myFunction()" class="btn btn-primary mb-2" id="nappi">Lähetä mielipiteesi</button>
+                  </div>
+                </form>
+                <script>
+                  function myFunction() {
+                    document.getElementById("mpide").submit();
+                    
+                  }
+                </script>
+
+                <div>
+                    <h2>Lorem ipsumia nääs </h2>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent
+                    aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam,
+                    at nonummy quam  ante ac quam. Maecenas urna purus, fermentum id,
+                    molestie in, commodo  porttitor, felis. Nam blandit quam ut lacus.
+                    Quisque ornare risus quis  ligula. Phasellus tristique purus a augue
+                    condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus
+                    venenatis, tristique in, vulputate at, odio. Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Commodi temporibus delectus quas, repellat fugit id 
+                    perferendis ipsum tenetur, autem deserunt alias? Natus, deleniti earum 
+                    incidunt consequatur ducimus consectetur optio cum! 
+                </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script>
+        $("#nappi").on('click', function(e){
+          e.preventDefault();
+          $("#myToast").toast('show');
+            toast("mpide");
+        });
+      </script>
+      <div aria-live="polite" aria-atomic="true">
+        <div class="toast" style="position: absolute; top: 14rem; right: 0;" id="myToast" data-autohide="false">
+          <div class="toast-header">
+            <img src="images/sad.png" width="25" height="25" class="rounded mr-2" alt="sad face">
+            <strong class="mr-auto">Tästä ei vielä tapahdu mitään</strong>
+            <small></small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Tarkoitus oli saada käyttäjän kirjoittama mielipide tähän toast-laatikkoon kummittelemaan, 
+            mutta en osannut käyttää javascriptiä vielä niin hyvin että se olisi ollut mahdollista.
+            Toivottavasti tulevaisuudessa sitten.
+          </div>
+        </div>
+      </div>
+      <!-- <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div> -->
+    <!-- <footer class= "shadow p-100 mb-5 bg-white rounded">
+        <p>terve</p>
+    </footer> -->
+</body>
+</html>

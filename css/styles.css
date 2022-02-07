@@ -1,0 +1,160 @@
+.rounded {
+    border-radius: 1.25rem!important;
+    
+}
+
+#navbar{
+    margin-top: 30px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    margin: 0px 150px 0px 150px;
+    padding-right: 50px;
+    padding-left: 15px;
+    margin-right: 150px; 
+    margin-left: 150px;
+    width: 100%
+}  */
+
+#mainContent{
+    text-align: center;
+    background-color: #ffffff;
+    
+    
+}
+
+#about{
+    line-height: 1.5rem;
+}
+
+p{
+    margin-bottom: 5rem;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    /* margin-right: 150px; 
+    margin-left: 150px; */
+}
+
+#etuteksti{
+    margin-bottom: 2rem;
+}
+
+body{
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    background: rgba(41, 109, 199, 0.699) url("../images/asd.png");
+    line-height: 1.5rem;
+    
+}
+
+.toast{
+    float:right;
+    display: flex;
+
+}
+
+.fade {
+    transition: opacity linear;
+}
+
+
+
+/* .p-3 #mainContent{
+    padding-bottom: 30%!important;
+    
+} */
+
+
+/* class= "shadow p-3 mb-5 bg-white rounded" */
+
+
+
+
+/* Mediahommat */
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+/* asdads */
+@media (min-width: 350px) { 
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 50px;
+    padding-left: 50px;
+        }
+p{    
+    padding-right: 50px;
+    padding-left: 50px;
+    } 
+.card p{
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 1rem;
+    }   
+#cardbox{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#peli p{
+    margin-bottom: 0;
+}
+.card-group .card{
+    width: 10rem;
+}
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 250px;
+    padding-left: 50px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .bi{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1200px) { 
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 450px;
+    padding-left: 150px;
+    }
+.form-group{
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 2.5rem;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) { 
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 850px;
+    padding-left: 150px;
+    }
+ }
+
+ .body {
+    background-color: rgb(211, 247, 55);
+}
+
+
+#peli {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
